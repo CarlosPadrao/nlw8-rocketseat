@@ -36,6 +36,8 @@ Basic structure for front-end development
 
 ## Usage
 
+***My node version: node-v12.18.2**
+
 1. Install dependencies, packages and initial structure
 
 ```sh
