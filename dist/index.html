@@ -4,25 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="assets/css/frontend.min.css">
-    <script src="assets/scripts/frontend.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
     <title>Projeto NLW</title>
 </head>
-<body class="home-page">
+<body>
     <main>
-        <!-- header -->
-        <header>
-            <div class="container d-flex align-items-center pt-3 header">
+
+        <div class="topPage">
+            <header class="container d-flex align-items-center pt-3">
                 <div class="col-md-4 logo">Doctor<span>Care</span></div>
                 <div class="col-md-4 menu">
                     <ul>
-                        <li><a href="#">Início</a></li>
-                        <li><a href="#">Sobre</a></li>
-                        <li><a href="#">Serviços</a></li>
-                        <li><a href="#">Depoimentos</a></li>
+                        <li>Início</li>
+                        <li>Sobre</li>
+                        <li>Serviços</li>
+                        <li>Depoimentos</li>
                     </ul>
                 </div>
                 <div class="col-md-4 agendar">
@@ -30,11 +30,7 @@
                         AGENDAR CONSULTA
                     </a>
                 </div>
-            </div>
-        </header>
-
-        <!-- first view -->
-        <div class="topPage">
+            </header>
             <div class="contentTopo d-flex align-items-center container">
                 <div class="col-md-7">
                     <div class="content d-flex flex-wrap">
@@ -45,7 +41,7 @@
                     <button><span></span>agende sua consulta</button>
                 </div>
                 <div class="col-md-5">
-                    <figure> <img src="source/images/topo001.png" style="width: 401px; height: 510px;" /> </figure>
+                    <figure> <img src="image/topo001.png" style="width: 401px; height: 510px;" /> </figure>
                 </div>
             </div>
             <div class="container destaqueServices d-flex">
@@ -70,29 +66,26 @@
             </div>
         </div>
 
-        <!-- services -->
         <section class="services container">
             <div class="servicesTitle col-md-6 mx-auto text-center mb-5">
                 <span>serviços</span>
                 <h2 class="mt-3">Como podemos ajudá-lo a se sentir melhor?</h2>
             </div>
             <div class="servicesOffer d-flex flex-wrap">
-                <!-- top -->
                 <div class="col-md-4 mb-3 box mr-4"><span></span><h2>Problemas digestivos</h2><p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim.</p></div>
                 <div class="col-md-4 mb-3 box mr-4"><span></span><h2>Saúde Hormonal</h2><p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim.</p></div>
                 <div class="col-md-4 mb-3 box"><span></span><h2>Bem-estar mental</h2><p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim.</p></div>
-                <!-- bottom -->
+                
                 <div class="col-md-4 mb-3 box mr-4"><span></span><h2>Cuidados Pediátricos</h2><p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim.</p></div>
                 <div class="col-md-4 mb-3 box mr-4"><span></span><h2>Autoimune e Inflamação</h2><p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim.</p></div>
                 <div class="col-md-4 mb-3 box"><span></span><h2>Saúde do Coração</h2><p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim.</p></div>
             </div>
         </section>
 
-        <!-- about -->
         <section class="sobre">
             <div class="conteudoSobre container d-flex">
                 <div class="col-md-6">
-                    <img src="source/images/pic-sobre.png" />
+                    <img src="image/pic-sobre.png" />
                 </div>
                 <div class="col-md-6">
                     <span>sobre nós</span>
@@ -102,7 +95,6 @@
             </div>
         </section>
 
-        <!-- contact -->
         <section class="contato">
             <div class="conteudoContato container d-flex align-items-center">
                 <div class="col-md-6">
@@ -114,12 +106,11 @@
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <img src="source/images/pic-contato.png" />
+                    <img src="image/pic-contato.png" />
                 </div>
             </div>
         </section>
 
-        <!-- footer -->
         <footer>
             <div class="container">
                 <div class="col-md-12 d-flex justify-content-between">
@@ -136,6 +127,7 @@
                 </div>
             </div>
         </footer>
+
     </main>
 </body>
 </html>

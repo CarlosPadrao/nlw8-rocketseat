@@ -1,0 +1,306 @@
+.home-page {
+    header {
+        background-color: var(--brand-green-light);
+        .header {
+            background-color: var(--brand-green-light);
+            padding: 10px 0px;
+    
+            .logo {
+                font-size: 32px;
+                font-weight: 400;
+                span {
+                    font-size: 32px;
+                    color: var(--brand-green);
+                    font-weight: 700;
+                }
+            }
+    
+            .menu ul {
+                list-style: none;
+                display: flex;
+                margin-bottom: 0px;
+                li a {
+                    padding: 0px 5px;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 20px;
+                    color: var(--brand-green);
+                    opacity: 0.7;
+                    text-decoration: none;
+                    &:active {
+                        font-size: 16px;
+                        font-weight: 700;
+                        line-height: 20px;
+                        color: var(--brand-green);
+                    }
+                }
+            }
+    
+            .agendar {
+                text-align: end;
+                text-decoration: none;
+                a {
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    color: var(--brand-green);
+                    font-size: 14px;
+                    font-weight: 700;
+                    line-height: 18px;
+                    border: 1px solid var(--brand-green);
+                    padding: 10px 24px;
+                    border-radius: 40px;
+                }
+            }
+        }
+    }
+
+    .topPage {
+        background-color: var(--brand-green-light);
+
+        .contentTopo {
+
+            button {
+                color: $white;
+                background-color: var(--brand-green);
+                border: 1px solid var(--brand-green);
+                border-radius: 40px;
+                font-size: 14px;
+                font-weight: 700;
+                line-height: 18px;
+                letter-spacing: 0em;
+                text-align: left;
+                padding: 17px 32px;
+                text-transform: uppercase;
+            }
+
+            figure {
+                margin-bottom: 0px;
+            }
+
+            .content {
+                span {
+                color: var(--brand-green);
+                font-size: 14px;
+                font-weight: 700;
+                line-height: 21px;
+                letter-spacing: 0.08em;
+                text-align: left;
+                text-transform: uppercase;
+                margin-bottom: 16px;
+                }
+
+                h1 {
+                    color: var(--brand-text) ;
+                    font-size: 52px;
+                    font-weight: 700;
+                    line-height: 68px;
+                    letter-spacing: 0em;
+                    text-align: left;
+                    margin-bottom: 24px;
+                }
+
+                p {
+                    color: var(--brand-text-2);
+                    font-size: 18px;
+                    font-weight: 400;
+                    line-height: 27px;
+                    letter-spacing: 0em;
+                    text-align: left;
+                    margin-bottom: 32px;
+                }
+
+            }
+        }
+    }
+
+    .destaqueServices {
+        background-color: var(--brand-beige);
+        border: 1px solid var(--brand-green-light);
+        padding: 60px 120px;
+
+        p {
+            color: var(--brand-text);
+            font-size: 48px;
+            font-weight: 700;
+            line-height: 62px;
+            letter-spacing: 0em;
+            text-align: left;
+            margin-bottom: 4px;
+            text-align: center;
+        }
+
+        span {
+            color: var(--brand-green);
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            letter-spacing: 0em;
+            text-align: center;
+        }
+        
+        .border-rightServices {
+            border-right: 1px solid var(--brand-green);
+        }
+    }
+
+    .services {
+        margin-top: 160px;
+        margin-bottom: 160px;
+
+        .servicesTitle {
+            span {
+                color: var(--brand-green);
+                font-size: 14px;
+                font-weight: 700;
+                line-height: 21px;
+                letter-spacing: 0.08em;
+                text-align: left;
+                text-transform: uppercase;
+            }
+            h2 {
+                color: var(--brand-text);
+                font-size: 40px;
+                font-weight: 700;
+                line-height: 52px;
+                letter-spacing: 0em;
+                text-align: center;
+            }
+        }
+
+        .servicesOffer {
+
+            .box {
+                background-color: $white;
+                padding: 24px 24px;
+                border: 1px solid var(--brand-green-light);
+                max-width: 340px;
+                h2 {
+                    color: var(--brand-text);
+                    font-size: 24px;
+                    font-weight: 700;
+                    line-height: 31px;
+                    letter-spacing: 0em;
+                }
+                p {
+                    color: var(--brand-text-2);
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 24px;
+                    letter-spacing: 0em;
+                    text-align: left;
+                }
+            }
+        }
+    }
+
+    
+    .sobre {
+        background-color: var(--brand-beige);
+
+        .conteudoSobre {
+            padding-top: 160px;
+            padding-bottom: 160px;
+
+            span {
+                font-size: 14px;
+                font-weight: 700;
+                line-height: 21px;
+                letter-spacing: 0.08em;
+                text-align: left;
+                text-transform: uppercase;
+                color: var(--brand-green);
+                margin-bottom: 10px;
+            }
+            h2 {
+                font-size: 40px;
+                font-weight: 700;
+                line-height: 52px;
+                letter-spacing: 0em;
+                text-align: left;
+                color: var(--brand-text);
+                margin-bottom: 24px;
+            }
+            p {
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 24px;
+                letter-spacing: 0em;
+                text-align: left;
+                color: var(--brand-text-2);
+            }
+        }
+    }
+
+    .contato {
+        .conteudoContato {
+            margin-top: 160px;
+            margin-bottom: 160px;
+            h2 {
+                font-size: 40px;
+                font-weight: 700;
+                line-height: 52px;
+                letter-spacing: 0em;
+                text-align: left;
+                max-width: 400px;
+                margin-bottom: 40px;
+            }
+            .address {
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 24px;
+                letter-spacing: 0em;
+                text-align: left;
+                margin-bottom: 16px;
+            }
+            .email {
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 24px;
+                letter-spacing: 0em;
+                text-align: left;
+                margin-bottom: 40px;
+            }
+            button {
+                color: $white;
+                background-color: var(--brand-green);
+                border: 1px solid var(--brand-green);
+                border-radius: 40px;
+                font-size: 14px;
+                font-weight: 700;
+                line-height: 18px;
+                letter-spacing: 0em;
+                text-align: left;
+                padding: 17px 32px;
+                text-transform: uppercase;
+            }
+        }
+    }
+
+    footer {
+        background-color: var(--brand-green);
+        padding: 80px 0px;
+
+        .content .logo {
+            color: $white;
+            font-size: 40px;
+
+            span {
+                color: $white;
+                font-weight: 700;
+                font-size: 40px;
+            }
+            p {
+                color: $white;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 18px;
+                letter-spacing: 0em;
+                text-align: left;
+            }
+        }
+
+        .socialMedia {
+        }
+    }
+
+}
