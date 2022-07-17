@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="assets/css/frontend.min.css">
-    <script src="assets/scripts/frontend.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
@@ -15,9 +14,10 @@
     <main>
         <!-- header -->
         <header>
-            <div class="container d-flex align-items-center pt-3 header">
+            <!-- desktop nav -->
+            <div class="container d-md-flex align-items-center pt-3 header d-none">
                 <div class="col-md-4 logo">Doctor<span>Care</span></div>
-                <div class="col-md-4 menu">
+                <div class="col-md-4 menu d-md-block">
                     <ul>
                         <li><a href="#">Início</a></li>
                         <li><a href="#">Sobre</a></li>
@@ -31,38 +31,81 @@
                     </a>
                 </div>
             </div>
+
+            <!-- mobile nav -->
+            <div class="container d-md-none align-items-center pt-3 pb-5 header header-mob">
+                <div class="col-md-4 logo">Doctor<span>Care</span></div>
+                <a href="#" id="open-modal">
+                    <i class="hamb-menu"></i>
+                </a>
+            </div>
+
+            <!-- mobile open modal -->
+            <div class="container" id="mobile-modal">
+                <div class="d-flex align-items-center mb-5">
+                    <div class="col-md-4 logo">Doctor<span>Care</span></div>
+                    <a href="#" id="close-modal">
+                        <i class="close-menu"></i>
+                    </a>
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li class="mb-5"><a href="#">Início</a></li>
+                        <li class="mb-5"><a href="#">Sobre</a></li>
+                        <li class="mb-5"><a href="#">Serviços</a></li>
+                        <li class="mb-5"><a href="#">Depoimentos</a></li>
+                    </ul>
+                </div>
+                <div class="agendar">
+                    <a href="#">
+                        AGENDAR CONSULTA
+                    </a>
+                </div>
+                <div class="socialMedia d-flex align-items-center justify-content-center mt-md-0 mt-3">
+                    <a href="#">
+                        <i class="instagram"></i>
+                    </a>
+                    <a href="#">
+                        <i class="facebook"></i>
+                    </a>
+                    <a href="#">
+                        <i class="youtube"></i>
+                    </a>
+                </div>
+            </div>
+         
         </header>
 
         <!-- first view -->
         <div class="topPage">
-            <div class="contentTopo d-flex align-items-center container">
-                <div class="col-md-7">
+            <div class="contentTopo d-flex flex-wrap align-items-center container">
+                <div class="col-12 col-md-7">
                     <div class="content d-flex flex-wrap">
-                        <span>Boas-vindas a doctorcare</span>
+                        <span>Boas-vindas a doctorcare 👋</span>
                         <h1>Assistência médica simplificada para todos</h1>
                         <p>Os médicos da DoctorCare vão além dos sintomas para tratar a causa raiz de sua doença e proporcionar uma cura a longo prazo</p>
                     </div>
-                    <button><span></span>agende sua consulta</button>
+                    <button>agende sua consulta</button>
                 </div>
-                <div class="col-md-5">
-                    <figure> <img src="source/images/topo001.png" style="width: 401px; height: 510px;" /> </figure>
+                <div class="col-12 col-md-5">
+                    <figure> <img src="source/images/topo001.png"/> </figure>
                 </div>
             </div>
-            <div class="container destaqueServices d-flex">
-                <div class="col-md-4 d-flex justify-content-center border-rightServices">
-                    <div class="pacAtendidos text-center">
+            <div class="container destaqueServices d-md-flex">
+                <div class="pacAtendidos col-md-4 d-flex justify-content-center border-rightServices">
+                    <div class="text-center">
                         <p>+3.500</p>
                         <span>Pacientes atendidos</span>
                     </div>
                 </div>
-                <div class="col-md-4 d-flex justify-content-center border-rightServices">
-                    <div class="espDisponiveis text-center">
+                <div class="espDisponiveis col-md-4 d-flex justify-content-center border-rightServices">
+                    <div class="text-center">
                         <p>+15</p>
                         <span>Especialistas disponíveis</span>
                     </div>
                 </div>
-                <div class="col-md-4 d-flex justify-content-center">
-                    <div class="anosMercado text-center">
+                <div class="anosMercado col-md-4 d-flex justify-content-center">
+                    <div class="text-center">
                         <p>+10</p>
                         <span>Anos no mercado</span>
                     </div>
@@ -71,30 +114,32 @@
         </div>
 
         <!-- services -->
-        <section class="services container">
-            <div class="servicesTitle col-md-6 mx-auto text-center mb-5">
-                <span>serviços</span>
-                <h2 class="mt-3">Como podemos ajudá-lo a se sentir melhor?</h2>
-            </div>
-            <div class="servicesOffer d-flex flex-wrap">
-                <!-- top -->
-                <div class="col-md-4 mb-3 box mr-4"><span></span><h2>Problemas digestivos</h2><p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim.</p></div>
-                <div class="col-md-4 mb-3 box mr-4"><span></span><h2>Saúde Hormonal</h2><p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim.</p></div>
-                <div class="col-md-4 mb-3 box"><span></span><h2>Bem-estar mental</h2><p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim.</p></div>
-                <!-- bottom -->
-                <div class="col-md-4 mb-3 box mr-4"><span></span><h2>Cuidados Pediátricos</h2><p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim.</p></div>
-                <div class="col-md-4 mb-3 box mr-4"><span></span><h2>Autoimune e Inflamação</h2><p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim.</p></div>
-                <div class="col-md-4 mb-3 box"><span></span><h2>Saúde do Coração</h2><p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim.</p></div>
+        <section class="services">
+            <div class="container">
+                <div class="servicesTitle col-md-6 mx-auto text-center mb-5">
+                    <span>serviços</span>
+                    <h2 class="mt-3">Como podemos ajudá-lo a se sentir melhor?</h2>
+                </div>
+                <div class="servicesOffer d-flex flex-wrap justify-content-between">
+                    <!-- top -->
+                    <div class="col-md-4 mb-md-4 mb-5 box"><h2>Problemas digestivos</h2><p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim.</p></div>
+                    <div class="col-md-4 mb-md-4 mb-5 box"><h2>Saúde Hormonal</h2><p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim.</p></div>
+                    <div class="col-md-4 mb-md-4 mb-5 box"><h2>Bem-estar mental</h2><p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim.</p></div>
+                    <!-- bottom -->
+                    <div class="col-md-4 mb-md-4 mb-5 box"><h2>Cuidados Pediátricos</h2><p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim.</p></div>
+                    <div class="col-md-4 mb-md-4 mb-5 box"><h2>Autoimune e Inflamação</h2><p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim.</p></div>
+                    <div class="col-md-4 mb-md-4 mb-5 box"><h2>Saúde do Coração</h2><p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim.</p></div>
+                </div>
             </div>
         </section>
 
         <!-- about -->
         <section class="sobre">
-            <div class="conteudoSobre container d-flex">
-                <div class="col-md-6">
+            <div class="conteudoSobre container d-flex flex-wrap">
+                <div class="col-md-6 order-md-0 order-1">
                     <img src="source/images/pic-sobre.png" />
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 order-md-1 order-0">
                     <span>sobre nós</span>
                     <h2>Entenda quem somos e por que existimos</h2>
                     <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.</p>
@@ -104,7 +149,7 @@
 
         <!-- contact -->
         <section class="contato">
-            <div class="conteudoContato container d-flex align-items-center">
+            <div class="conteudoContato container d-flex flex-wrap align-items-center">
                 <div class="col-md-6">
                     <div class="contentContato">
                         <h2>Entre em contato com a gente!</h2>
@@ -122,19 +167,27 @@
         <!-- footer -->
         <footer>
             <div class="container">
-                <div class="col-md-12 d-flex justify-content-between">
+                <div class="col-md-12 d-flex flex-wrap justify-content-between">
                     <div class="content d-flex flex-wrap flex-column">
                         <div class="logo">Doctor<span>Care</span></div>
                         <p>©2022 - DoctorCare.</p>
                         <p>Todos os direitos reservados.</p>
                     </div>
-                    <div class="socialMedia">
-                        <span>insta</span>
-                        <span>facebook</span>
-                        <span>youtube</span>
+                    <div class="socialMedia d-flex align-items-center mt-md-0 mt-3">
+                        <a href="#">
+                            <i class="instagram"></i>
+                        </a>
+                        <a href="#">
+                            <i class="facebook"></i>
+                        </a>
+                        <a href="#">
+                            <i class="youtube"></i>
+                        </a>
                     </div>
                 </div>
             </div>
+            <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+            <script src="assets/scripts/frontend.min.js"></script>
         </footer>
     </main>
 </body>

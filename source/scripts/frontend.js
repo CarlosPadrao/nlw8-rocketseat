@@ -1,22 +1,16 @@
-(function ($) {
+var openModal = document.querySelector('#open-modal');
+var closeModal = document.querySelector('#close-modal');
+var mobileModal = document.querySelector('#mobile-modal')
+var headerMob = document.querySelector('.header-mob');
 
-    const app = () => {
-        this.body = $('body');
+//onclick
+openModal.addEventListener('click', function () {
+    mobileModal.style.display = 'block';
+    headerMob.classList.add('d-none');
+});
 
-        //CREATE FUNCTIONS FOR THE SITE
-        const functionName = () => {
-            console.log('Worked!');
-        };
-
-        //THEN ADD THEM TO THE RUN FUNCTION
-        const run = () => {
-            functionName();
-        };
-
-        run();
-    };
-
-    $(function () {
-        app();
-    });
-})(jQuery);
+//onclick
+closeModal.addEventListener('click', function () {
+    mobileModal.style.display = 'none';
+    headerMob.classList.remove('d-none');
+});
