@@ -16,7 +16,7 @@
         <!-- header -->
         <header>
             <!-- desktop nav -->
-            <div class="container d-md-flex align-items-center header d-none" id="sectionInicio">
+            <div class="container d-md-flex align-items-center header d-none">
                 <div class="col-md-4 logo">Doctor<span>Care</span></div>
                 <div class="col-md-4 menu d-md-block">
                     <ul>
@@ -51,10 +51,10 @@
                 </div>
                 <div class="menu">
                     <ul>                  
-                        <li class="mb-5" onclick="hideModal()"><a href="#sectionInicio">Início</a></li>
-                        <li class="mb-5" onclick="hideModal()"><a href="#sectionSobre">Sobre</a></li>
-                        <li class="mb-5" onclick="hideModal()"><a href="#sectionServicos">Serviços</a></li>
-                        <li class="mb-5" onclick="hideModal()"><a href="#sectionDepoimentos">Depoimentos</a></li>
+                        <li class="mb-5 item-nav-mobile" onclick="esconder()"><a href="#sectionInicio">Início</a></li>
+                        <li class="mb-5 item-nav-mobile" onclick="esconder()"><a href="#sectionSobre">Sobre</a></li>
+                        <li class="mb-5 item-nav-mobile" onclick="esconder()"><a href="#sectionServicos">Serviços</a></li>
+                        <li class="mb-5 item-nav-mobile" onclick="esconder()"><a href="#sectionDepoimentos">Depoimentos</a></li>
                     </ul>
                 </div>
                 <div class="agendar">
@@ -78,7 +78,7 @@
         </header>
 
         <!-- first view -->
-        <div class="topPage pt-md-0 pt-5">
+        <div class="topPage pt-md-0 pt-5" id="sectionInicio">
             <div class="contentTopo d-flex flex-wrap align-items-center container">
                 <div class="col-12 col-md-7">
                     <div class="content d-flex flex-wrap">
