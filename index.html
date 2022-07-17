@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="assets/css/frontend.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
@@ -15,25 +16,25 @@
         <!-- header -->
         <header>
             <!-- desktop nav -->
-            <div class="container d-md-flex align-items-center pt-3 header d-none">
+            <div class="container d-md-flex align-items-center header d-none" id="sectionInicio">
                 <div class="col-md-4 logo">Doctor<span>Care</span></div>
                 <div class="col-md-4 menu d-md-block">
                     <ul>
-                        <li><a href="#">Início</a></li>
-                        <li><a href="#">Sobre</a></li>
-                        <li><a href="#">Serviços</a></li>
-                        <li><a href="#">Depoimentos</a></li>
+                        <li><a href="#sectionInicio">Início</a></li>
+                        <li><a href="#sectionSobre">Sobre</a></li>
+                        <li><a href="#sectionServicos">Serviços</a></li>
+                        <li><a href="#sectionDepoimentos">Depoimentos</a></li>
                     </ul>
                 </div>
                 <div class="col-md-4 agendar">
-                    <a href="#">
+                    <a href="#sectionContato">
                         AGENDAR CONSULTA
                     </a>
                 </div>
             </div>
 
             <!-- mobile nav -->
-            <div class="container d-md-none align-items-center pt-3 pb-5 header header-mob">
+            <div class="container d-md-none align-items-center pt-3 pb-3 header header-mob">
                 <div class="col-md-4 logo">Doctor<span>Care</span></div>
                 <a href="#" id="open-modal">
                     <i class="hamb-menu"></i>
@@ -49,15 +50,15 @@
                     </a>
                 </div>
                 <div class="menu">
-                    <ul>
-                        <li class="mb-5"><a href="#">Início</a></li>
-                        <li class="mb-5"><a href="#">Sobre</a></li>
-                        <li class="mb-5"><a href="#">Serviços</a></li>
-                        <li class="mb-5"><a href="#">Depoimentos</a></li>
+                    <ul>                  
+                        <li class="mb-5 item-nav-mobile" onclick="esconder()"><a href="#sectionInicio">Início</a></li>
+                        <li class="mb-5 item-nav-mobile" onclick="esconder()"><a href="#sectionSobre">Sobre</a></li>
+                        <li class="mb-5 item-nav-mobile" onclick="esconder()"><a href="#sectionServicos">Serviços</a></li>
+                        <li class="mb-5 item-nav-mobile" onclick="esconder()"><a href="#sectionDepoimentos">Depoimentos</a></li>
                     </ul>
                 </div>
                 <div class="agendar">
-                    <a href="#">
+                    <a href="#sectionContato">
                         AGENDAR CONSULTA
                     </a>
                 </div>
@@ -77,7 +78,7 @@
         </header>
 
         <!-- first view -->
-        <div class="topPage">
+        <div class="topPage pt-md-0 pt-5">
             <div class="contentTopo d-flex flex-wrap align-items-center container">
                 <div class="col-12 col-md-7">
                     <div class="content d-flex flex-wrap">
@@ -114,7 +115,7 @@
         </div>
 
         <!-- services -->
-        <section class="services">
+        <section class="services" id="sectionServicos">
             <div class="container">
                 <div class="servicesTitle col-md-6 mx-auto text-center mb-5">
                     <span>serviços</span>
@@ -134,7 +135,7 @@
         </section>
 
         <!-- about -->
-        <section class="sobre">
+        <section class="sobre" id="sectionSobre">
             <div class="conteudoSobre container d-flex flex-wrap">
                 <div class="col-md-6 order-md-0 order-1">
                     <img src="source/images/pic-sobre.png" />
@@ -148,7 +149,7 @@
         </section>
 
         <!-- contact -->
-        <section class="contato">
+        <section class="contato" id="sectionContato">
             <div class="conteudoContato container d-flex flex-wrap align-items-center">
                 <div class="col-md-6">
                     <div class="contentContato">
@@ -186,9 +187,8 @@
                     </div>
                 </div>
             </div>
-            <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-            <script src="assets/scripts/frontend.min.js"></script>
         </footer>
+        <script src="assets/scripts/frontend.min.js"></script>
     </main>
 </body>
 </html>
