@@ -116,9 +116,9 @@ function copyComponents() {
 // BrowserSync
 function browserSync(done) {
     browsersync.init({
-        open: 'external',
-        host: 'virtualhost.local.test',
-        proxy: 'virtualhost.local.test'
+        // open: 'external',
+        // host: 'virtualhost.local.test',
+        // proxy: 'virtualhost.local.test'
     });
     done();
 }
