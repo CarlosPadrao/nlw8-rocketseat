@@ -12,8 +12,13 @@
         "Modernizr": true
     },
     "parserOptions": {
-        "ecmaVersion": 2018
+        "ecmaVersion": 2018,
+        "sourceType":"module"
     },
     "rules": {
+        "quotes": 0,
+        "no-trailing-spaces": 0,
+        "no-unused-vars": 0,
+        "no-underscore-dangle": 0
     }
 }

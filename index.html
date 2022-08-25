@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
     <title>Projeto NLW</title>
 </head>
-<body class="home-page">
+<body class="home-page" id="sectionInicio">
     <main>
         <!-- header -->
         <header>
@@ -23,7 +23,7 @@
                         <li><a href="#sectionInicio">Início</a></li>
                         <li><a href="#sectionSobre">Sobre</a></li>
                         <li><a href="#sectionServicos">Serviços</a></li>
-                        <li><a href="#sectionDepoimentos">Depoimentos</a></li>
+                        <li><a href="#sectionDepoimentos" onclick="alerta()">Depoimentos</a></li>
                     </ul>
                 </div>
                 <div class="col-md-4 agendar">
@@ -78,7 +78,7 @@
         </header>
 
         <!-- first view -->
-        <div class="topPage pt-md-0 pt-5" id="sectionInicio">
+        <div class="topPage pt-md-0 pt-5">
             <div class="contentTopo d-flex flex-wrap align-items-center container">
                 <div class="col-12 col-md-7">
                     <div class="content d-flex flex-wrap">
@@ -86,7 +86,7 @@
                         <h1>Assistência médica simplificada para todos</h1>
                         <p>Os médicos da DoctorCare vão além dos sintomas para tratar a causa raiz de sua doença e proporcionar uma cura a longo prazo</p>
                     </div>
-                    <button>agende sua consulta</button>
+                    <button onclick="alerta();">agende sua consulta</button>
                 </div>
                 <div class="col-12 col-md-5">
                     <figure> <img src="source/images/topo001.png"/> </figure>
@@ -156,7 +156,7 @@
                         <h2>Entre em contato com a gente!</h2>
                         <p class="address">R. Amauri Souza, 346</p>
                         <p class="email">contato@doctorcare.com</p>
-                        <button>agende sua consulta</button>
+                        <button onclick="alerta()">agende sua consulta</button>
                     </div>
                 </div>
                 <div class="col-md-6">
